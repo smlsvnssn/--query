@@ -6,7 +6,6 @@ ___
 
 **ö🍳uery** is a tiny DOM and events lib, with chainable async, and some basic animation. It is partially a subset of jQuery, but it's simpler, smaller, faster, and doesn't care about IE. It is also excellent with a swedish keyboard (If you happen to own a non-Swedish keyboard, simply reassign `ö` to for example `è`, `ü`, `Ω` or `ß`). It relies on ES2017 features, and aims to be compatible with as few browsers as possible :-) Latest versions of Chrome and Firefox works, Fixefox must have `dom.moduleScripts.enabled = true` in `about:config` for module support. Latest versions of Safari and Edge seem to work pretty well as well.
 
-**Run code examples by clicking them.**
 
 
 ## Usage
@@ -474,47 +473,3 @@ ___
 ##### © 2018 lhli.net.
 ##### Licence: [MIT](https://opensource.org/licenses/MIT)
 
-</content>
-<toc></toc>
-<script>
-	window.addEventListener('öQuery', () => {
-		const content = ö('content').html(),
-			toc = ö('toc'),
-			body = ö('body'),
-			renderToc = () => {
-				headlines.clone()
-					.on('click', e => {
-								headlines
-									.filter( el => el.innerText === e.target.innerText )
-									.e().scrollIntoView({behavior: 'smooth', block: 'start'});
-							})
-					.appendTo('toc');
-				toc.hover(() => {
-					toc.addClass('active')
-						.wait(300).addClass('open');
-					body.addClass('noScroll');
-				}, () => {
-					toc.stopQueue().removeClass('active open');
-					body.removeClass('noScroll');
-					})
-				}, 
-			run = e => {
-				ö(e.target).off();
-				Function(ö(e.target).text())();
-				ö('content')
-					.wait(3000)
-					.queue(reset)
-				},
-			reset = () => {
-				ö('content')
-					.html(content)
-					.wait()
-					.find('.runnable')
-					.on('click', run);
-				headlines = ö('h2, h3, h4');
-			}
-		let headlines = ö('h2, h3, h4');
-		renderToc();
-		ö('.runnable').on('click', run);
-	}, { once: true })
-</script>
