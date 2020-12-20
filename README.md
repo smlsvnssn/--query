@@ -1,9 +1,11 @@
 <content>
+
 # ö**🍳**uery,
 ##### or: you can't make an omelette without breaking a few eggs.
 ___
 
 **ö🍳uery** is a tiny DOM and events lib, with chainable async, some basic animation, and a few useful utilities. Its main usage is for hacking, playing and prototyping, when you have an idea and want to sketch it out fast. If you're courageous, it's probably stable enough for smaller projects, where you don't need a massive framework.
+	
 	
 ö🍳uery is partially a subset of jQuery and Zepto, but it's simpler, smaller, faster, and doesn't care about IE.
 
@@ -639,5 +641,3 @@ Converts string to Rövarspråket, like so: <code class="runnable">ö('code').te
 ___
 ##### © 2018-2020 [lhli.net](https://lhli.net)
 ##### Licence: [MIT](https://opensource.org/licenses/MIT)
-
-</content>
