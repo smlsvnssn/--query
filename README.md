@@ -25,7 +25,6 @@ ___
 
 It is also excellent with a swedish keyboard (If you happen to own a non-Swedish keyboard, simply reassign `ö` to for example `è`, `ü`, `Ω` or `ß`). It relies heavily on ES2017/18 features, and aims to be compatible with as few browsers as possible 🤪. Chrome and Firefox works, latest versions of Safari and Edge seem to work pretty well as well.
 
-**Run code examples by clicking them.**
 
 ## Usage
 <!--<code class="runnable test">ö('code.test').on('clickoutside', e => ö.log(ö.verbose(true, false), ö.error('apa')));</code> -->
