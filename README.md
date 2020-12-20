@@ -1,20 +1,4 @@
 <content>
-<!--<code class="runnable test">ö('.test').move(100,0,500).wait(500).hide(500).wait(500).show(500)</code>
-<code class="runnable test">ö('.test').ease('ease-in-expo').move(() => ö.random(1000, 5000)+'px', 0, 1000).wait(1000).ease('ease-out-back').move(0, 0, 1500)</code>
-<!-- 	<code class="runnable">ö('code').removeAllClasses();</code> -->
-	<!--<code class="runnable test">let cb = e => {
-		ö.log(e.target, e);
-		e.target.dispatchEvent(new Event('bastuba'));
-	};
-	ö.registerCustomEvent('bastuba', element => element.addEventListener('click', cb), element => element.removeEventListener('click', cb));
-	let f = e => null; 
-	ö('code.test').on('bastuba', e => ö.log(e.type));
-	ö('code.test').hide(0, true)
-	.on('enterview', e => ö(e.target).show(500))
-	.on('exitview', f)
-	.on('clickoutside', f).off('exitview', f)</code>
--->
-	
 # ö**🍳**uery,
 ##### or: you can't make an omelette without breaking a few eggs.
 ___
@@ -25,6 +9,7 @@ ___
 
 It is also excellent with a swedish keyboard (If you happen to own a non-Swedish keyboard, simply reassign `ö` to for example `è`, `ü`, `Ω` or `ß`). It relies heavily on ES2017/18 features, and aims to be compatible with as few browsers as possible 🤪. Chrome and Firefox works, latest versions of Safari and Edge seem to work pretty well as well.
 
+**Demo, source and documentation here: (codepen.io/smlsvnssn/full/brqjrm)[codepen.io/smlsvnssn/full/brqjrm]
 
 ## Usage
 <!--<code class="runnable test">ö('code.test').on('clickoutside', e => ö.log(ö.verbose(true, false), ö.error('apa')));</code> -->
